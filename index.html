@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SoulSpeak - A safe space to share your stories, secrets, and emotions anonymously. Connect with a caring community.">
+    <meta name="theme-color" content="#0f0f1e">
+    <meta name="og:title" content="SoulSpeak - Speak Freely. Stay Anonymous.">
+    <meta name="og:description" content="A safe place where people can anonymously share their stories, emotions, dreams and thoughts.">
+    <meta name="og:type" content="website">
+    <title>SoulSpeak - Speak Freely. Stay Anonymous.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%239d4edd'>🌙</text></svg>">
+</head>
+<body>
+    <!-- Cinematic Intro Screen -->
+    <div id="intro-screen" class="intro-screen active">
+        <div class="intro-content">
+            <div class="intro-stars"></div>
+            <div class="intro-moon"></div>
+            <div class="intro-mascot">
+                <img src="assets/logo.svg" alt="SoulSpeak" style="width: 280px; height: 280px; filter: drop-shadow(0 0 40px rgba(199, 125, 255, 0.8));">
+            </div>
+            <h1 class="intro-title">SoulSpeak</h1>
+            <p class="intro-tagline">Every soul has a story...</p>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <main id="main-content" class="main-content">
+        <!-- Animated Background -->
+        <div class="background-wrapper">
+            <div class="stars-container"></div>
+            <div class="moon"></div>
+            <div class="clouds"></div>
+            <div class="nebula"></div>
+            <div class="particles"></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <img src="assets/logo.svg" alt="SoulSpeak" style="width: 48px; height: 48px; margin-right: 10px;">
+                    <span class="logo-text">SoulSpeak</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                    <li><a href="#community" class="nav-link">Community</a></li>
+                    <li><a href="#download" class="nav-link btn-cta">Download</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-mascot">
+                    <svg viewBox="0 0 200 300" width="200" height="300">
+                        <!-- Hooded Character -->
+                        <defs>
+                            <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" style="stop-color:#c77dff;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#7209b7;stop-opacity:0" />
+                            </radialGradient>
+                        </defs>
+                        <!-- Hood -->
+                        <ellipse cx="100" cy="80" rx="70" ry="75" fill="#1a0033" opacity="0.9"/>
+                        <path d="M 40 100 Q 30 150 50 180 L 150 180 Q 170 150 160 100" fill="#0f0015" opacity="0.95"/>
+                        <!-- Face -->
+                        <circle cx="100" cy="120" r="40" fill="#2d1b4e"/>
+                        <!-- Eyes with glow -->
+                        <circle cx="85" cy="110" r="8" fill="url(#eyeGlow)" class="eye-glow"/>
+                        <circle cx="115" cy="110" r="8" fill="url(#eyeGlow)" class="eye-glow"/>
+                        <circle cx="85" cy="110" r="5" fill="#c77dff"/>
+                        <circle cx="115" cy="110" r="5" fill="#c77dff"/>
+                        <!-- Peaceful expression -->
+                        <path d="M 90 135 Q 100 140 110 135" stroke="#9d4edd" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <!-- Body -->
+                        <ellipse cx="100" cy="200" rx="45" ry="60" fill="#1a0033" opacity="0.8"/>
+                        <!-- Crescent Moon Background -->
+                        <path d="M 120 30 Q 140 50 120 70 Q 115 50 120 30" fill="#ffd60a" opacity="0.7"/>
+                    </svg>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="hero-title">SoulSpeak</h1>
+                    <p class="hero-subtitle">Speak Freely. Stay Anonymous.</p>
+                    <p class="hero-description">
+                        A safe space to share your stories, secrets, dreams and emotions without fear of judgment.
+                        Join a caring community that listens, understands, and supports.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">
+                            <span class="btn-icon">🟣</span> Download APK
+                        </a>
+                        <a href="#features" class="btn btn-secondary">
+                            <span class="btn-icon">⚪</span> Explore Features
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats">
+            <div class="stats-grid">
+                <div class="stat-card glass-effect">
+                    <div class="stat-number" data-target="100">0</div>
+                    <span class="stat-label">K+ Anonymous Stories</span>
+                    <span class="stat-icon">👥</span>
+                </div>
+                <div class="stat-card glass-effect">
+                    <div class="stat-number" data-target="50">0</div>
+                    <span class="stat-label">K+ Community Members</span>
+                    <span class="stat-icon">👥</span>
+                </div>
+                <div class="stat-card glass-effect">
+                    <div class="stat-number" data-target="1">0</div>
+                    <span class="stat-label">M+ Support Reactions</span>
+                    <span class="stat-icon">❤️</span>
+                </div>
+                <div class="stat-card glass-effect">
+                    <div class="stat-number">100%</div>
+                    <span class="stat-label">Privacy First</span>
+                    <span class="stat-icon">🔒</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="section-header">
+                <h2>Features</h2>
+                <p>Everything you need for a private, peaceful experience</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon">🎭</div>
+                    <h3>Anonymous Identity</h3>
+                    <p>Never reveal your identity. Express yourself freely without fear of judgment or consequences.</p>
+                </div>
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon">🏘️</div>
+                    <h3>Confession Rooms</h3>
+                    <p>Join communities you love. Find your people in rooms dedicated to your passions and thoughts.</p>
+                </div>
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Private Vault</h3>
+                    <p>Keep personal thoughts private. Your deepest secrets are encrypted and secure.</p>
+                </div>
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Guardian</h3>
+                    <p>Helping maintain a positive community. Smart moderation keeps the space safe for everyone.</p>
+                </div>
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Supportive Reactions</h3>
+                    <p>Connect through kindness. React with emojis and show support to fellow souls.</p>
+                </div>
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon">🌙</div>
+                    <h3>Midnight Mode</h3>
+                    <p>Designed for peaceful late-night conversations. Express when the world is asleep.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Confession Rooms Section -->
+        <section id="rooms" class="confession-rooms">
+            <div class="section-header">
+                <h2>Confession Rooms</h2>
+                <p>Find your community. Choose rooms that speak to your soul.</p>
+            </div>
+
+            <div class="rooms-scroll">
+                <div class="room-card glass-effect">
+                    <div class="room-badge">❤️</div>
+                    <h4>Love</h4>
+                    <p>Heartbeats & Feelings</p>
+                </div>
+                <div class="room-card glass-effect">
+                    <div class="room-badge">🎓</div>
+                    <h4>Student</h4>
+                    <p>Exams & Dreams</p>
+                </div>
+                <div class="room-card glass-effect">
+                    <div class="room-badge">💼</div>
+                    <h4>Career</h4>
+                    <p>Ambitions & Growth</p>
+                </div>
+                <div class="room-card glass-effect">
+                    <div class="room-badge">🏋️</div>
+                    <h4>Fitness</h4>
+                    <p>Health & Wellness</p>
+                </div>
+                <div class="room-card glass-effect">
+                    <div class="room-badge">🎮</div>
+                    <h4>Gaming</h4>
+                    <p>Victories & Escapes</p>
+                </div>
+                <div class="room-card glass-effect">
+                    <div class="room-badge">🌙</div>
+                    <h4>Midnight Thoughts</h4>
+                    <p>3 AM Confessions</p>
+                </div>
+                <div class="room-card glass-effect">
+                    <div class="room-badge">🎭</div>
+                    <h4>Secret Society</h4>
+                    <p>Hidden Truths</p>
+                </div>
+                <div class="room-card glass-effect">
+                    <div class="room-badge">🎵</div>
+                    <h4>Music</h4>
+                    <p>Melodies & Feels</p>
+                </div>
+                <div class="room-card glass-effect">
+                    <div class="room-badge">📚</div>
+                    <h4>Books</h4>
+                    <p>Stories Within Stories</p>
+                </div>
+                <div class="room-card glass-effect">
+                    <div class="room-badge">🚀</div>
+                    <h4>Startups</h4>
+                    <p>Innovation & Risk</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>5 simple steps to start sharing</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-step">1</div>
+                    <div class="timeline-content glass-effect">
+                        <h4>Create Account</h4>
+                        <p>Sign up with email or phone</p>
+                    </div>
+                </div>
+                <div class="timeline-arrow">↓</div>
+
+                <div class="timeline-item">
+                    <div class="timeline-step">2</div>
+                    <div class="timeline-content glass-effect">
+                        <h4>Choose Anonymous Identity</h4>
+                        <p>Pick your anonymous persona</p>
+                    </div>
+                </div>
+                <div class="timeline-arrow">↓</div>
+
+                <div class="timeline-item">
+                    <div class="timeline-step">3</div>
+                    <div class="timeline-content glass-effect">
+                        <h4>Join Rooms</h4>
+                        <p>Connect with communities</p>
+                    </div>
+                </div>
+                <div class="timeline-arrow">↓</div>
+
+                <div class="timeline-item">
+                    <div class="timeline-step">4</div>
+                    <div class="timeline-content glass-effect">
+                        <h4>Share Stories</h4>
+                        <p>Express yourself freely</p>
+                    </div>
+                </div>
+                <div class="timeline-arrow">↓</div>
+
+                <div class="timeline-item">
+                    <div class="timeline-step">5</div>
+                    <div class="timeline-content glass-effect">
+                        <h4>Receive Support</h4>
+                        <p>Be part of the community</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Values Section -->
+        <section id="community" class="community-values">
+            <div class="section-header">
+                <h2>Community Values</h2>
+                <p>What makes SoulSpeak special</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card glass-effect">
+                    <div class="value-icon">💜</div>
+                    <h4>Kindness</h4>
+                    <p>We treat each other with compassion and understanding</p>
+                </div>
+                <div class="value-card glass-effect">
+                    <div class="value-icon">🤝</div>
+                    <h4>Respect</h4>
+                    <p>Everyone's voice matters and deserves to be heard</p>
+                </div>
+                <div class="value-card glass-effect">
+                    <div class="value-icon">🔐</div>
+                    <h4>Privacy</h4>
+                    <p>Your data is yours. Always encrypted. Always safe.</p>
+                </div>
+                <div class="value-card glass-effect">
+                    <div class="value-icon">🫂</div>
+                    <h4>Empathy</h4>
+                    <p>We listen without judgment and support with genuine care</p>
+                </div>
+                <div class="value-card glass-effect">
+                    <div class="value-icon">✨</div>
+                    <h4>Authenticity</h4>
+                    <p>Be your true self, even if that self is anonymous</p>
+                </div>
+                <div class="value-card glass-effect">
+                    <div class="value-icon">🌟</div>
+                    <h4>Support</h4>
+                    <p>We lift each other up through challenging times</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="section-header">
+                <h2>Community Voices</h2>
+                <p>Real stories from real souls</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-effect">
+                    <div class="testimonial-avatar">🐦</div>
+                    <h4>Anonymous Raven</h4>
+                    <p class="testimonial-handle">@AnonymousRaven</p>
+                    <p class="testimonial-text">
+                        "SoulSpeak gave me the courage to share my story without fear. The community's support changed my life."
+                    </p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial-card glass-effect">
+                    <div class="testimonial-avatar">🦊</div>
+                    <h4>Anonymous Fox</h4>
+                    <p class="testimonial-handle">@SilentFox</p>
+                    <p class="testimonial-text">
+                        "Finally found people who understand me. This app feels like coming home to a safe place."
+                    </p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial-card glass-effect">
+                    <div class="testimonial-avatar">🐺</div>
+                    <h4>Silent Wolf</h4>
+                    <p class="testimonial-handle">@SilentWolf</p>
+                    <p class="testimonial-text">
+                        "The anonymity feature is perfect. I can be honest about my struggles without judgment."
+                    </p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial-card glass-effect">
+                    <div class="testimonial-avatar">⭐</div>
+                    <h4>Hidden Star</h4>
+                    <p class="testimonial-handle">@HiddenStar</p>
+                    <p class="testimonial-text">
+                        "A beautiful platform for the midnight thoughts that keep us awake. Pure magic."
+                    </p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="download-section">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2>Ready to Share Your Story?</h2>
+                    <p>Join thousands of souls finding peace and connection on SoulSpeak.</p>
+                </div>
+
+                <div class="download-buttons">
+                    <a href="downloads/soulspeak.apk" class="download-btn android" download>
+                        <span class="btn-icon">📱</span>
+                        <div>
+                            <div class="btn-label">Download APK</div>
+                            <div class="btn-sublabel">Android</div>
+                        </div>
+                    </a>
+                    <a href="#" class="download-btn google">
+                        <span class="btn-icon">🎮</span>
+                        <div>
+                            <div class="btn-label">Google Play</div>
+                            <div class="btn-sublabel">Coming Soon</div>
+                        </div>
+                    </a>
+                    <a href="#" class="download-btn apple">
+                        <span class="btn-icon">🍎</span>
+                        <div>
+                            <div class="btn-label">Apple App Store</div>
+                            <div class="btn-sublabel">Coming Soon</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="final-cta">
+                    <p class="cta-emoji">🌙</p>
+                    <h3>Everyone has a story.</h3>
+                    <p>Some stories deserve a safe place.</p>
+                    <h2>Join SoulSpeak</h2>
+                    <p class="cta-tagline">Speak Freely. Stay Anonymous.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SoulSpeak</h4>
+                    <p>A safe place for every soul to share their story.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Discord</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SoulSpeak. All rights reserved. Made with 💜 for the midnight souls.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

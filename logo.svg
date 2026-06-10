@@ -1,0 +1,54 @@
+<svg viewBox="0 0 768 768" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d946ef;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#c77dff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7209b7;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.2" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="768" height="768" fill="#0a0014" opacity="0"/>
+  
+  <!-- Main speech bubble silhouette -->
+  <path d="M 300 120 C 250 120 210 160 210 220 L 210 420 C 210 480 250 520 300 520 L 380 520 L 420 580 L 380 520 L 480 520 C 530 520 570 480 570 420 L 570 220 C 570 160 530 120 480 120 Z" fill="url(#bubbleGradient)"/>
+  
+  <!-- Head silhouette inside bubble -->
+  <ellipse cx="340" cy="260" rx="60" ry="70" fill="#0a0014"/>
+  <path d="M 280 280 Q 260 300 260 340 Q 260 380 280 400 L 400 400 Q 420 380 420 340 Q 420 300 400 280 Z" fill="#0a0014"/>
+  
+  <!-- Eyes -->
+  <circle cx="315" cy="280" r="12" fill="url(#eyeGlow)"/>
+  <circle cx="365" cy="280" r="12" fill="url(#eyeGlow)"/>
+  <circle cx="315" cy="280" r="7" fill="#ffffff" opacity="0.9"/>
+  <circle cx="365" cy="280" r="7" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Peaceful expression -->
+  <path d="M 320 330 Q 340 345 360 330" stroke="#f0e7ff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Crescent Moon -->
+  <g transform="translate(520, 180)">
+    <circle cx="0" cy="0" r="35" fill="#ffd60a"/>
+    <circle cx="12" cy="0" r="35" fill="#0a0014"/>
+  </g>
+  
+  <!-- Decorative Stars -->
+  <g fill="#c77dff">
+    <!-- Star 1 -->
+    <path d="M 480 220 L 490 240 L 510 240 L 495 252 L 505 272 L 480 260 L 455 272 L 465 252 L 450 240 L 470 240 Z"/>
+    <!-- Star 2 -->
+    <path d="M 580 280 L 585 292 L 598 292 L 588 300 L 593 312 L 580 305 L 567 312 L 572 300 L 562 292 L 575 292 Z" opacity="0.7"/>
+    <!-- Star 3 -->
+    <path d="M 240 180 L 248 198 L 268 198 L 252 210 L 260 228 L 240 216 L 220 228 L 228 210 L 212 198 L 232 198 Z" opacity="0.5"/>
+    <!-- Star 4 -->
+    <circle cx="150" cy="320" r="4" opacity="0.6"/>
+    <circle cx="620" cy="380" r="3" opacity="0.5"/>
+  </g>
+  
+  <!-- Speech bubble tail detail -->
+  <path d="M 420 520 L 380 580 L 430 540" fill="url(#bubbleGradient)"/>
+</svg>

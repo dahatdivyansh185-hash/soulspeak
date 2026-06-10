@@ -1,0 +1,16 @@
+{
+  "name": "SoulSpeak",
+  "short_name": "SoulSpeak",
+  "description": "A premium anonymous community for sharing stories, dreams and feelings at midnight.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#07050f",
+  "theme_color": "#100c1e",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
