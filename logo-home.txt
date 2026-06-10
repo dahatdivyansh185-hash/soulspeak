@@ -1,0 +1,2 @@
+I need to save the logo image from the attachment.
+The user wants to replace the SVG mascot in the hero section with the real logo image.
